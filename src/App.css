@@ -1,0 +1,138 @@
+/* App.css */
+body {
+  background-color: #333; /* Set background color for the entire website */
+  margin: 0; /* Remove default body margin */
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.Menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Menu ul li {
+  margin-left: 20px; /* Adjusted margin property */
+}
+
+.Menu ul li a {
+  color: azure; /* Default text color */
+  text-decoration: none;
+  padding: 5px 10px; /* Reduced padding for hover area */
+}
+
+.Menu ul li a:hover {
+  font-weight: bold; /* Make the text bold */
+  color: #fff; /* Change text color on hover */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 500px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  color: #fff; /* Make sure the text is visible against the dark background */
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #fff; /* Make sure the text is visible against the dark background */
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.FaqAccordion {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.FaqAccordionItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.FaqAccordionTitle {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.FaqAccordionTitle:hover {
+  background-color: #1a1919;
+}
+
+.FaqAccordionTitle h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.FaqAccordionIcon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.FaqAccordionIcon.active {
+  transform: rotate(180deg); /* Flip the arrow icon */
+}
+
+.FaqAccordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #333;
+  padding: 0 15px;
+  border-radius: 0 0 5px 5px;
+}
+
+.FaqAccordionContent.active {
+  max-height: 200px; /* Adjust based on the content size */
+  padding: 15px;
+}
+
+.FaqAccordionContent p {
+  margin: 0;
+  color: #ffffff;
+}
+
